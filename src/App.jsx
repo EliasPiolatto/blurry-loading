@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import image from './assets/Elias.png';
 
 function App() {
   const [load, setLoad] = useState(0);
@@ -34,7 +35,7 @@ function App() {
 
   return (
     <>
-      <section className="bg"></section>
+      <img src={image} alt="#" className="bg"></img>
       <div className="loading-text">{load}%</div>
     </>
   );
